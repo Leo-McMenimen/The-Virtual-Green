@@ -1,23 +1,31 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning;
 
 public class TurnModeToggle : MonoBehaviour
 {
-    public SnapTurnProvider snapTurn;
-    public ContinuousTurnProvider continuousTurn;
+    public SnapTurnProvider snapTurnProvider;
+    public ContinuousTurnProvider continuousTurnProvider;
 
-    // Call this to enable snap turn
-    public void EnableSnapTurn()
+    void Start()
     {
-        snapTurn.enabled = true;
-        continuousTurn.enabled = false;
+        // Start with Snap Turn enabled
+        snapTurnProvider.enabled = true;
+        continuousTurnProvider.enabled = false;
     }
 
-    // Call this to enable continuous turn
-    public void EnableContinuousTurn()
+    public void ToggleTurnMode()
     {
-        snapTurn.enabled = false;
-        continuousTurn.enabled = true;
+        if (snapTurnProvider.enabled)
+        {
+            // Switch to Continuous Turn
+            snapTurnProvider.enabled = false;
+            continuousTurnProvider.enabled = true;
+        }
+        else
+        {
+            // Switch to Snap Turn
+            snapTurnProvider.enabled = true;
+            continuousTurnProvider.enabled = false;
+        }
     }
 }
