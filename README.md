@@ -26,5 +26,7 @@ When you have the project open in Unity:
 
 Link to watch video of gameplay and discussion of important features added:
 
+https://drive.google.com/file/d/1jP3hBKsMe_geBYaTOSMkC4nPsl3J3gLH/view?usp=sharing
+
 
   
