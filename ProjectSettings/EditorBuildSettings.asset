@@ -5,12 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
-  - enabled: 0
-    path: Assets/Scenes/BasicScene.unity
-    guid: 4e9fef26e6adb88479ad1b9834a32d94
   - enabled: 1
     path: Assets/Scenes/Leo's Final Project.unity
     guid: d1d12374309be1f48be511f2c4aa9139
